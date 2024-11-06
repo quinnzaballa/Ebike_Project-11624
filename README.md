@@ -36,8 +36,34 @@ My name is **_Quinn Matthew C. Zaballa_** the author and owner of this codebase,
      - User input, Dashboard
      - Warning indicators
      - Throttle feedback.
-    
 <br/>
+
+### Menu: TODO
+<br/><br/>
+
+4. Menus
+   - Vehicle Mode
+     - ECO mode
+     - Sports mode
+     - Auto-Adjust mode
+   - Infos
+     - Version
+     - Codebase Release Version
+     - Available Sensors 
+   - Settings
+     - RFID Registration
+     - Sleep mode when idle (Time)
+     - Undefined
+   - Controls
+     - Undefine
+   - Sensors
+     - DHT11
+     - Accel Sensor
+     - Proximity Sensor
+     - Undefined
+
+<br/>
+
 
 ## TODO: RANK
 <br/>
