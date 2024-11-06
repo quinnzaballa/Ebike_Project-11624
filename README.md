@@ -43,7 +43,7 @@ My name is **_Quinn Matthew C. Zaballa_** the author and owner of this codebase,
 <br/>
 
 > [!NOTE]
-> The Ranking will change and will be noted down in the documentation. if ever the code is failing or returning with not expected results.<br/><br/>
+> The Ranking will change and will be noted down in the documentation if ever the code is failing or returning with not expected results.<br/><br/>
 > Every Failure and edits has notes and documentation for better understanding on both me and users that are looking at this codebase.
 
 | Rank | Languages |
