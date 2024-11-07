@@ -79,3 +79,31 @@ My name is **_Quinn Matthew C. Zaballa_** the author and owner of this codebase,
 |     3| Dashboard          |
 |     4| Controlling the E-Bike   |
 
+<br/><br/>
+
+> [!WARNING]
+> This is in experimental stage, IM NOT responsible from accidents or somesort due to sensor, electronics failure. You are complying by using this code YOU ARE responsible from all the damages and etc.
+
+<br/><br/>
+
+### WorkFlow of Electronics
+
+<br/><br/>
+
+**Commit Flow**
+
+<br/>
+
+### Menu-Navigation Flow
+
+```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true}} }%%
+  gitGraph
+      commit id: "First Commit" tag: "Experimental"
+      commit id: "Menu Navigation code"
+      branch Coding order: 1
+      commit id: "Menu-Nav start Coding"
+      commit id: "START" tag: "Day-1"
+      branch Alpha-Release order: 2
+      
+```
