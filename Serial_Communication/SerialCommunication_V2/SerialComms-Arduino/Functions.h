@@ -1,6 +1,8 @@
 #ifndef AuthARF_H
 #define AuthARF_H
 
+  // Probably for debug only or send data to ESP32-Master
+
 String AuthARF (void *ParamsStruct, String type) {
   AuthAR *aauthptr = (AuthAR *)ParamsStruct;
 
@@ -21,9 +23,36 @@ String AuthARF (void *ParamsStruct, String type) {
   }
 
 
-  Serial.println("Type is'nt configured/unknown!");
+  Serial.println("Type isn't configured/unknown!");
 
 }
+#endif // end of AuthARF function
 
 
-#endif
+#ifndef strtauth_H
+#define strtauth_H
+
+/*
+||  wte = What to expect? ie; ESP32-Slave or Arduino
+*/
+
+int strtauth(String dataIN, String wte) {
+  if (wte == "ESP32-Master") {
+  
+  dataIN.replace(" ", ""); // remove spaces in the text.
+  
+  /* Debug
+  Serial.println(dataIN);
+  */
+
+  /*
+  || Start indexing and data processing
+  */
+  
+  Serial.println("RequestAllowed-ESP32_MASTER");
+
+  }
+}
+
+#endif // end of strtauth..
+

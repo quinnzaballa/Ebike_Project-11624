@@ -1,3 +1,4 @@
+  // Arduino 1 Identification.
 #ifndef AuthAR_H
 #define AuthAR_H
 
