@@ -1,0 +1,5 @@
+
+
+int strauthfAR(string dataIN) {
+  
+}

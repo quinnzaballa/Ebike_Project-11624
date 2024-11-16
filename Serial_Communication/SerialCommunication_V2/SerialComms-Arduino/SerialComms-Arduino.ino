@@ -8,23 +8,16 @@
 
 void setup() {
   Serial.begin(115200);
-  // Ignore boot info on ESP32's
-
-
-  // Check for serial
-  while (true) {
-  int incSerial = Serial.read();
-  Serial.println("ESP32: Boot info..");
-
-
-  if (incSerial > -1) {
-    // Initialize and Authenticate
-    AuthARF(&aauth, "ALL");
-   return;
-   }
-  }
+  // Nothing to do here. Maybe
 }
 
 void loop() {
-    // Nothing to do here: YET
+  // Start reading for incoming bytes|String|data.
+  while (true) {
+  if (Serial.available() > 0) {
+    String dataincstr = Serial.readStringUntil('\n'); // Process incoming data stream and turn to String
+    // delay(500); // Debounce to make sure the data sent is complete..
+    strtauth(dataincstr, "ESP32-Master");
+   }
+  }
 }
