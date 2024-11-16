@@ -1,0 +1,6 @@
+{
+    "port": "COM11",
+    "board": "arduino:avr:uno",
+    "programmer": "arduinoisp",
+    "sketch": "Serial_Communication\\SerialCommunication_V2\\SerialComms-Arduino\\SerialComms-Arduino.ino"
+}
