@@ -85,3 +85,17 @@ My name is **_Quinn Matthew C. Zaballa_** the author and owner of this codebase,
 > This is in experimental stage, IM NOT responsible from accidents or somesort due to sensor, electronics failure. You are complying by using this code YOU ARE responsible from all the damages and etc.
 
 <br/><br/>
+
+
+
+
+
+## License
+
+This repository is licensed under a **Custom License**.
+
+- For private, non-commercial use: Free to use, modify, and distribute.
+- For commercial use: Requires a commercial license agreement. Please contact Phone #: (Philippines) +639065313708, Email: (gmail) quinnmatthewczaballa@gmail.com for pricing and terms.
+
+For more information, see the [LICENSE](./LICENSE) file.
+
