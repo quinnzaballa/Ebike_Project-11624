@@ -8,4 +8,5 @@ struct AuthAR {
 };
 
 AuthAR aauth = {"Arduino", "41:72:64:75:69:6E:6F:2D:53:6C:61:76:65"};
+
 #endif

@@ -5,19 +5,24 @@
 #include "DataStruct.h"
 #include "Functions.h"
 
+byte iniA = false;
 
-void setup() {
-  Serial.begin(115200);
-  // Nothing to do here. Maybe
-}
 
 void loop() {
-  // Start reading for incoming bytes|String|data.
-  while (true) {
-  if (Serial.available() > 0) {
-    String dataincstr = Serial.readStringUntil('\n'); // Process incoming data stream and turn to String
-    // delay(500); // Debounce to make sure the data sent is complete..
-    strtauth(dataincstr, "ESP32-Master");
-   }
+  // Call initializer 
+  if (!iniA) { // Run for the first time if wasnt initialized. Itll run again when a code didnt get the pleasure. then reset iniA..
+  int returncode = initializeCommsA();
+    if (returncode == 1) {
+      iniA = true;
+    }
   }
+
+  /*
+  ||  Code starts here...
+  ||  Use ArduinoSend() to each command for identifications..
+  ||
+  */
+
+
+
 }
