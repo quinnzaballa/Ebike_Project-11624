@@ -82,7 +82,7 @@ My name is **_Quinn Matthew C. Zaballa_** the author and owner of this codebase,
 <br/><br/>
 
 > [!WARNING]
-> This is in experimental stage, IM NOT responsible from accidents or somesort due to sensor, electronics failure. You are complying by using this code YOU ARE responsible from all the damages and etc.
+> This is in experimental stage, IM NOT responsible from accidents or somesort due to sensor, and electronics failure. You are complying by using this code YOU ARE responsible from all the damages and etc.
 
 <br/><br/>
 
