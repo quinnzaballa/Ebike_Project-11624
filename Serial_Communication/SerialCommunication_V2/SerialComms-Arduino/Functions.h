@@ -47,21 +47,27 @@ int strtauth(String dataIN, String wte) {
   if (wte == "ESP32-Master") {
   dataIN.replace(" ", ""); // remove spaces in the text.
   
-  Serial.println("RequestAllowed-ESP32_MASTER"); // Send Clearance text to ESP32-Master
 
   // Initialize timeout
-  unsigned long timeout = millis() + 5000;
+  unsigned long timeout = millis() + 3000;
 
   while (true) {
     
     // Timeout
     if (millis() > timeout) {
-    // Serial.println("Time out!"); was jsut for debug...
-    return 2; // Return value 2 for timeout.
+    // Serial.println("Time out!"); was just for debug...
+      return 2; // Return value 2 for timeout.
+    } else {
+      delay(50); // debounce to stop spamming
+      // incldue to While then send data continously till timeout
+      Serial.println("RequestAllowed-ESP32_MASTER"); // Send Clearance text to ESP32-Master
     }
 
     if (Serial.available() > 0) {
     String incS = Serial.readStringUntil('\n');
+
+    // Trim for better results
+    incS.trim();
 
     // Check if the ESP32 was done authentication
     if (incS == "Okay!") {
