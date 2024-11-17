@@ -2,11 +2,17 @@
 || Arduino Side
 || Send data and auth
 */
+#include "Cclass.h"
 #include "DataStruct.h"
 #include "Functions.h"
 
-byte iniA = false;
+// Const data in test input
+// Potentiometer 1
+const int pot1 = A0;
 
+DatainputsC dataIN(0, 0);
+
+byte iniA = false;
 
 void loop() {
   // Call initializer 
@@ -22,7 +28,13 @@ void loop() {
   ||  Use ArduinoSend() to each command for identifications..
   ||
   */
+  
+  /* Map pot value (debug only) */
+  int potm = analogRead(pot1);
+  int potval = map(potm, 0, 1023, 0, 255);
+  dataIN.write(0, potval);
 
-
-
+  dataInputs* dinputptr = dataIN.getDataptr();
+  Serial.print("Pointer value1: ");
+  Serial.println(dinputptr->Pot_1);
 }
