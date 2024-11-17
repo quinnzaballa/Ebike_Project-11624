@@ -1,5 +1,3 @@
-#include "Arduino.h"
-
 // Start of AuthARF function(s)
 #ifndef AuthARF_H
 #define AuthARF_H
@@ -52,7 +50,7 @@ int strtauth(String dataIN, String wte) {
   Serial.println("RequestAllowed-ESP32_MASTER"); // Send Clearance text to ESP32-Master
 
   // Initialize timeout
-  int timeout = millis() + 5000;
+  unsigned long timeout = millis() + 5000;
 
   while (true) {
     
