@@ -1,7 +1,8 @@
 # Custom E-Bike MCU
 ### Introduction
 This is a public repository, If you are likely very interested on this certain project of mine, You can give me suggestions on **Pull Request** Section.
-
+<br/>
+> IM NOT DEAD YET. IM JUST SWITCHING TO ESP-IDF AND LEARNING
 ---
 My name is **_Quinn Matthew C. Zaballa_** the author and owner of this codebase, I currently **DO NOT** accept help(s) or any related to that word. 
 > TL:DR I want to code everything myself.
