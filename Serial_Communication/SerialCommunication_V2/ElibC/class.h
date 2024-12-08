@@ -1,7 +1,17 @@
+  /* 
+  ||
+  ||
+  || Arduino class start here
+  ||
+  ||
+  */
+
+
+#include "structure.h"
+
 #ifndef DatainputsC_H
 #define DatainputsC_H
 
-#include "DataStruct.h"
 
 class DatainputsC {
 
@@ -29,3 +39,12 @@ class DatainputsC {
 };
 
 #endif
+
+
+  /* 
+  ||
+  ||
+  || Arduino class end here
+  ||
+  ||
+  */
