@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Quinn Matthew C. Zaballa",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -51.2,
+      "left": 399.2,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": -104.84, "left": 297.6, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 163.2, "left": 297, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -405.2, "left": 63.2, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 34.8,
+      "left": 330.6,
+      "attrs": { "color": "red", "flip": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:GND", "gnd1:GND", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "vcc1:VCC", "red", [ "h0" ] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "h-230.4", "v29" ] ],
+    [ "lcd1:SCL", "esp:22", "green", [ "h-9.6", "v19.5", "h-220.8", "v-38.4" ] ],
+    [ "keypad1:R1", "esp:19", "green", [ "v0" ] ],
+    [ "keypad1:R2", "esp:18", "green", [ "v0" ] ],
+    [ "keypad1:C1", "esp:5", "green", [ "v0" ] ],
+    [ "keypad1:C2", "esp:17", "green", [ "v0" ] ],
+    [ "gnd1:GND", "led1:C", "black", [ "v-67.2", "h48" ] ],
+    [ "led1:A", "esp:16", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

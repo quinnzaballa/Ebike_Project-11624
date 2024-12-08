@@ -1,10 +1,11 @@
+#include <class.h>
+#include <functions.h>
+#include <structure.h>
+
 /*
 || Arduino Side
 || Send data and auth
 */
-#include "Cclass.h"
-#include "DataStruct.h"
-#include "Functions.h"
 
 // Const data in test input
 // Potentiometer 1
