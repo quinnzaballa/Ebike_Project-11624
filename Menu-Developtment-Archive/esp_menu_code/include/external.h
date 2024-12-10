@@ -27,6 +27,9 @@
 #include "LiquidCrystal_I2C.h"
 #include "Keypad.h"
 
+//  ### define ###
+#define CURR_VERSION "12.10.24      " 
+
 /**
  * ==============================================
  * |||||||||||||||||||||||||||||||||||||||||||||||
@@ -48,6 +51,18 @@ extern void kpd_update();
 extern void t_kpd_update(void *params);
 extern void lcd_update();
 extern void t_lcd_update(void *params);
+extern void run_code_sub_menu();
+extern void test(void *params);
+extern gpio_config_t led_tog;
+extern void setup_gpio();
+extern int prevload;
+extern bool printed;
+extern bool led_prevvalue;
+extern int val_prevval;
+extern bool val_bool_fr;
+extern String cpu_get_string;
+extern bool runonlyonce2;
+extern int sys_sel;
 
 /**
  * ==============================================
@@ -89,11 +104,21 @@ struct menu_variables {
 
 extern menu_variables _menu_variables;
 
+struct reset_verify {
+    int done_pass_1;
+    int done_pass_2;
+    int done_pass_3;
+    int done_pass_4;
+};
+
+extern reset_verify _reset_verify;
+
 // Structure to combine the struct to pass to params (freertos task)
 struct task_pass_params {
-    kpd_variable __kpd_variable;
-    menu_list_pos __menu_list_pos;
-    menu_variables __menu_variables;
+    kpd_variable* __kpd_variable;
+    menu_list_pos* __menu_list_pos;
+    menu_variables* __menu_variables;
+    reset_verify* __reset_verify;
 };
 
 extern task_pass_params _task_pass_params; // Define values outside for compiler to know it was declared outside.
